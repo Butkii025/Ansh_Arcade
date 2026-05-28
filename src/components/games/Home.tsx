@@ -4,9 +4,10 @@ import React, { useState } from 'react';
 import { FaBrain, FaRobot, FaGamepad, FaChessKnight, FaArrowLeft } from 'react-icons/fa';
 import TicTacToe from './TicTacToe';
 import RetroSnake from './RetroSnake';
-import ChessPuzzles from './ChessPuzzles';
+import ChessGameApp from './ChessGameApp';
 
-type GameId = 'tic-tac-toe' | 'retro-snake' | 'chess-puzzles' | null;
+// FIX 1: Updated the union type to match the literal value 'chess-game-app'
+type GameId = 'tic-tac-toe' | 'retro-snake' | 'chess-game-app' | null;
 
 interface GameItem {
   id: Exclude<GameId, null>;
@@ -44,7 +45,8 @@ export default function HomeArcade(): React.JSX.Element {
       glowColor: 'group-hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]'
     },
     {
-      id: 'chess-puzzles',
+      // FIX 2: Changed from 'chess-puzzles' to 'chess-game-app'
+      id: 'chess-game-app', 
       title: 'Chess Endgames',
       description: 'Master tactical checkmate configurations, positioning matrices, and deep capture calculation modules.',
       icon: <FaChessKnight className="text-blue-400 group-hover:scale-110 transition duration-300" size={24} />,
@@ -55,7 +57,6 @@ export default function HomeArcade(): React.JSX.Element {
     }
   ];
 
-  // Helper function to figure out the text for the sub-header zone
   const getSubheaderText = () => {
     if (!activeGame) return 'A Next-Gen Library of Custom Game Engines';
     const match = gamesList.find(g => g.id === activeGame);
@@ -65,13 +66,11 @@ export default function HomeArcade(): React.JSX.Element {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-500/30 selection:text-blue-200 relative overflow-x-hidden p-6 md:p-12">
       
-      {/* BACKGROUND AMBIENT GLOWS */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-500/5 rounded-full filter blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-purple-500/5 rounded-full filter blur-[120px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto pt-12 pb-12 flex flex-col items-center relative z-10">
         
-        {/* DYNAMIC HEADER CORE */}
         <header className="text-center mb-12 transition-all duration-500 ease-in-out">
           {!activeGame && (
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300">
@@ -79,14 +78,12 @@ export default function HomeArcade(): React.JSX.Element {
             </div>
           )}
           
-          {/* Main Title handles fluid tracking/sizing styles dynamically based on activeGame state */}
           <h1 className={`font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white via-zinc-200 to-zinc-600 select-none transition-all duration-500 ease-in-out ${
             activeGame ? 'text-3xl md:text-4xl' : 'text-5xl md:text-7xl'
           }`}>
             Kriyon_Arcade
           </h1>
 
-          {/* Subheader dynamically updates to the specific active game name with color accents */}
           <p className={`tracking-[0.25em] uppercase font-semibold max-w-md mx-auto mt-3 transition-all duration-500 ${
             activeGame ? 'text-purple-400 text-xs md:text-sm tracking-widest' : 'text-zinc-500 text-[10px] md:text-xs'
           }`}>
@@ -94,7 +91,6 @@ export default function HomeArcade(): React.JSX.Element {
           </p>
         </header>
 
-        {/* LOBBY GRID DISPLAY VIEW */}
         {!activeGame ? (
           <section className="w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="flex items-center gap-3 mb-8 border-b border-zinc-900 pb-4">
@@ -136,10 +132,8 @@ export default function HomeArcade(): React.JSX.Element {
             </div>
           </section>
         ) : (
-          /* SINGLE PLAY HARDWARE CANVAS VIEW */
           <section className="w-full flex flex-col items-center animate-in fade-in zoom-in-95 duration-300">
             
-            {/* Top Navigation Controller Bar without Frame-Buffer badge */}
             <div className="w-full max-w-md flex items-center justify-start mb-6 px-2">
               <button 
                 onClick={() => setActiveGame(null)}
@@ -149,13 +143,13 @@ export default function HomeArcade(): React.JSX.Element {
               </button>
             </div>
 
-            {/* Render Target Block */}
             <div className="w-full flex justify-center relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-[3rem] blur-xl opacity-30 pointer-events-none" />
               <div className="relative w-full flex justify-center">
                 {activeGame === 'tic-tac-toe' && <TicTacToe />}
                 {activeGame === 'retro-snake' && <RetroSnake />}
-                {activeGame === 'chess-puzzles' && <ChessPuzzles />}
+                {/* FIX 3: Now perfectly matches the updated array key identity */}
+                {activeGame === 'chess-game-app' && <ChessGameApp />}
               </div>
             </div>
           </section>
