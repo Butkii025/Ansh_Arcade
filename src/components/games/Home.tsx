@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 import { FaBrain, FaRobot, FaGamepad, FaChessKnight, FaArrowLeft } from 'react-icons/fa';
 import TicTacToe from './TicTacToe';
 import RetroSnake from './RetroSnake';
-import ChessGameApp from './ChessGameApp';
+import ChessGameApp from './chess/ChessGameApp';
+
+
 
 // FIX 1: Updated the union type to match the literal value 'chess-game-app'
 type GameId = 'tic-tac-toe' | 'retro-snake' | 'chess-game-app' | null;
@@ -45,7 +47,6 @@ export default function HomeArcade(): React.JSX.Element {
       glowColor: 'group-hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]'
     },
     {
-      // FIX 2: Changed from 'chess-puzzles' to 'chess-game-app'
       id: 'chess-game-app', 
       title: 'Chess Endgames',
       description: 'Master tactical checkmate configurations, positioning matrices, and deep capture calculation modules.',
@@ -148,7 +149,6 @@ export default function HomeArcade(): React.JSX.Element {
               <div className="relative w-full flex justify-center">
                 {activeGame === 'tic-tac-toe' && <TicTacToe />}
                 {activeGame === 'retro-snake' && <RetroSnake />}
-                {/* FIX 3: Now perfectly matches the updated array key identity */}
                 {activeGame === 'chess-game-app' && <ChessGameApp />}
               </div>
             </div>

@@ -1,6 +1,5 @@
 {
   "name": "kriyon-arcade",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
