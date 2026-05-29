@@ -47,11 +47,11 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 │   │   ├── layout.tsx       # Root layout, global fonts, and context wrappers
 │   │   ├── page.tsx         # Kriyon_Arcade Core Dashboard / Hub Interface
 │   │   └── games/           # Dedicated route directory for all game instances
-│   │       ├── chess/       # Route: [website.com/games/chess](https://website.com/games/chess)
+│   │       ├── chess/       
 │   │       │   └── page.tsx 
-│   │       ├── retrosnake/  # Route: [website.com/games/retrosnake](https://website.com/games/retrosnake)
+│   │       ├── retrosnake/  
 │   │       │   └── page.tsx 
-│   │       └── tictactoe/   # Route: [website.com/games/tictactoe](https://website.com/games/tictactoe)
+│   │       └── tictactoe/   
 │   │           └── page.tsx 
 │   ├── components/          # Reusable UI System
 │   │   ├── shared/          # Global application shell (Navbar, Footer)
@@ -67,6 +67,8 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 💻 Developer
 ​Maintained by: P_vijay
 ​Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
+
+
 ​🤝 Contributing & Collaboration
 ​If you have an idea for a game or want to improve an existing one, contributions are welcome! Please follow these structured steps to ensure a smooth integration:
 ​Fork the Repository: Click the "Fork" button at the top right of this page to create a copy under your account.
