@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 import { FaBrain, FaRobot, FaGamepad, FaChessKnight, FaArrowLeft } from 'react-icons/fa';
-import TicTacToe from './TicTacToe';
-import RetroSnake from './RetroSnake';
-import ChessGameApp from './chess/ChessGameApp';
+import TicTacToe from './games/TicTacToe';
+import RetroSnake from './games//RetroSnake';
+import ChessGameApp from './games//chess/ChessGameApp';
+import VisitorCounter from '../components/VisitorCounter';
 
 
 
-// FIX 1: Updated the union type to match the literal value 'chess-game-app'
 type GameId = 'tic-tac-toe' | 'retro-snake' | 'chess-game-app' | null;
 
 interface GameItem {
@@ -59,7 +59,7 @@ export default function HomeArcade(): React.JSX.Element {
   ];
 
   const getSubheaderText = () => {
-    if (!activeGame) return 'A Next-Gen Library of Custom Game Engines';
+    if (!activeGame) return 'Built For : Frictionless Multi-Game Matrix';
     const match = gamesList.find(g => g.id === activeGame);
     return match ? `Running Mode // ${match.title}` : '';
   };
@@ -72,17 +72,12 @@ export default function HomeArcade(): React.JSX.Element {
 
       <div className="max-w-5xl mx-auto pt-12 pb-12 flex flex-col items-center relative z-10">
         
-        <header className="text-center mb-12 transition-all duration-500 ease-in-out">
-          {!activeGame && (
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300">
-              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby
-            </div>
-          )}
-          
+        <header className="text-center mb-20  transition-all duration-500 ease-in-out">
+        
           <h1 className={`font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white via-zinc-200 to-zinc-600 select-none transition-all duration-500 ease-in-out ${
             activeGame ? 'text-3xl md:text-4xl' : 'text-5xl md:text-7xl'
           }`}>
-            Kriyon_Arcade
+            Ansh_Arcade
           </h1>
 
           <p className={`tracking-[0.25em] uppercase font-semibold max-w-md mx-auto mt-3 transition-all duration-500 ${
@@ -90,6 +85,7 @@ export default function HomeArcade(): React.JSX.Element {
           }`}>
             {getSubheaderText()}
           </p>
+          
         </header>
 
         {!activeGame ? (
@@ -97,8 +93,13 @@ export default function HomeArcade(): React.JSX.Element {
             <div className="flex items-center gap-3 mb-8 border-b border-zinc-900 pb-4">
               <h3 className="text-xs font-mono font-bold tracking-widest text-zinc-400 uppercase">Available Core Frameworks</h3>
               <span className="text-[10px] font-mono bg-zinc-900 text-zinc-500 border border-zinc-800 px-2.5 py-0.5 rounded-full">
-                {gamesList.length} Online
+                {gamesList.length} Online 
               </span>
+              
+              <p className="text-[10px] font-mono text-zinc-500 tracking-widest border-l border-zinc-800 pl-4">
+                🕹️ ARCADE VISITORS: <VisitorCounter />
+              </p>
+              
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 w-full">
@@ -154,6 +155,22 @@ export default function HomeArcade(): React.JSX.Element {
             </div>
           </section>
         )}
+        <p className="text-center mt-10  transition-all duration-500 ease-in-out">
+          {!activeGame && (
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300 mt-4">
+              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby : designed by
+              <div className="flex flex-wrap gap-3">
+                <a 
+                href="https://in.pinterest.com/" 
+                target="_blank" 
+                rel="noreferrer"
+                className="hover:bg-zinc-800 text-zinc-400 hover:text-blue-500 transition-all duration-300 shadow-xl active:scale-90"
+                >P_Vijay
+                </a>
+              </div>
+            </div>
+          )}
+        </p>
 
       </div>
     </div>

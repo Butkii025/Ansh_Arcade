@@ -1,4 +1,3 @@
-// src/components/games/chess/subcomponents/SidePanel.jsx
 import React from "react";
 import { motion } from "framer-motion";
 
