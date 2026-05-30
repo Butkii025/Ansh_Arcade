@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # 🎮 Kriyon_Arcade
 
 A modern, high-performance web gaming platform built with Next.js, acting as a centralized hub for interactive, responsive web games.
@@ -35,7 +31,7 @@ A modern, high-performance web gaming platform built with Next.js, acting as a c
 * **Framework:** [Next.js](https://nextjs.org/) (App Router architecture)
 * **Language:** [TypeScript](https://www.typescriptlang.org/) / Advanced JavaScript (Algorithmic Logic)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Font Asset:** Geist (Optimized natively via `next/font`)
+* **Font Asset:🏆** Geist (Optimized natively via `next/font`)
 
 ---
 
@@ -68,50 +64,19 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 ├── package.json
 └── README.md
 
-```
-
----
-
-## 🚀 Getting Started
-
-To spin up a local instance of Kriyon_Arcade:
-
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/](https://github.com/)[your-username]/Kriyon_Arcade.git
-cd Kriyon_Arcade
-
-```
+💻 Developer
+​Maintained by: P_vijay
+​Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
 
 
-2. **Install dependencies:**
-```bash
-npm install
-
-```
-
-
-3. **Run the development server:**
-```bash
-npm run dev
-
-```
-
-
-4. Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your web browser to check out the dashboard.
-
-```
-
-​## 🤝 Contributing & Collaboration
-​If you have an idea for a game or want to improve an existing one, contributions are welcome!
-
-Add Your Game Code:
+​🤝 Contributing & Collaboration
+​If you have an idea for a game or want to improve an existing one, contributions are welcome! Please follow these structured steps to ensure a smooth integration:
+​Fork the Repository: Click the "Fork" button at the top right of this page to create a copy under your account.
+​Add Your Game Code:
 ​Place your core game components or route folders inside the src/app/games/YOUR_GAME_NAME and src/components/games/YOUR_GAME_NAME directories.
 ​If your game requires static media (images, sprites, audio), place them inside public/assets/games/YOUR_GAME_NAME/.
-
-​Verify Implementation : Run the project locally and double-check that your game functions cleanly without cross-contaminating other game environments or causing layout shifts.
+​Verify Implementation: Run the project locally and double-check that your game functions cleanly without cross-contaminating other game environments or causing layout shifts.
 ​Create a Pull Request (PR): Submit a PR to the main repository using the following naming convention:
 ​PR for [YOUR_GAME_NAME] by @[YOUR_GITHUB_USERNAME]
 
-
-```
+---
