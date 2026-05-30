@@ -6,6 +6,7 @@ import TicTacToe from './games/TicTacToe';
 import RetroSnake from './games//RetroSnake';
 import ChessGameApp from './games//chess/ChessGameApp';
 import VisitorCounter from '../components/VisitorCounter';
+import FooterPanel from '../components/FooterPanel';
 
 
 
@@ -173,6 +174,7 @@ export default function HomeArcade(): React.JSX.Element {
         </p>
 
       </div>
+       <FooterPanel />
     </div>
   );
 }
