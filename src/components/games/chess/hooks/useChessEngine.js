@@ -1,4 +1,3 @@
-// src/components/games/chess/hooks/useChessEngine.js
 import { useState, useMemo } from "react";
 import { initialBoard, getLegalMoves, findKing, isSquareAttacked } from "../utils/chessRules";
 
@@ -11,7 +10,6 @@ export function useChessEngine() {
   const [winner, setWinner] = useState(null); 
   const [promotionPending, setPromotionPending] = useState(null); 
 
-  // New absolute scoring state tracker
   const [capturedScores, setCapturedScores] = useState({ white: 0, black: 0 });
 
   const resetGame = () => {
@@ -66,9 +64,9 @@ export function useChessEngine() {
 
     const [sr, sc] = selected;
     const piece = board[sr][sc];
-    const targetCell = board[r][c]; // What is currently sitting on the target square?
+    const targetCell = board[r][c]; 
 
-    // --- ACCURATE REAL-TIME CAPTURE FILTER MATRIX ---
+    //  ACCURATE REAL-TIME CAPTURE FILTER MATRIX
     if (targetCell && targetCell[0] !== piece[0]) {
       const targetType = targetCell[1];
       const pointValues = { p: 1, r: 3, b: 3, n: 3, q: 9, k: 0 };

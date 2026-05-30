@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Crown, RotateCcw, Sparkles, Swords, ShieldCheck } from "lucide-react";
+import { Crown, RotateCcw, Sparkles, Swords} from "lucide-react";
 import { pieces } from "../utils/chessRules";
 
 export function ChessBoard({ board, selected, turn, validMoves, handleClick, resetGame }) {
@@ -38,7 +38,7 @@ export function ChessBoard({ board, selected, turn, validMoves, handleClick, res
 
       <div className="grid grid-cols-3 gap-2 w-full max-w-[460px] mt-4">
         <div className="bg-white/5 border border-white/5 rounded-xl p-2.5 text-center">
-          <div className="text-[10px] font-bold text-yellow-400 flex items-center justify-center gap-1 mb-0.5 uppercase tracking-wide"><Sparkles size={11} /> v2.5.0</div>
+          <div className="text-[10px] font-bold text-yellow-400 flex items-center justify-center gap-1 mb-0.5 uppercase tracking-wide"><Sparkles size={11} /> v2.7.0</div>
           <p className="text-[9px] text-slate-400 leading-tight">Pawn promotions live.</p>
         </div>
         <div className="bg-white/5 border border-white/5 rounded-xl p-2.5 text-center">

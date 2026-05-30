@@ -1,5 +1,3 @@
-// src/components/chess/utils/chessRules.js
-
 export const initialBoard = [
   ["br", "bn", "bb", "bq", "bk", "bb", "bn", "br"],
   ["bp", "bp", "bp", "bp", "bp", "bp", "bp", "bp"],

@@ -1,4 +1,3 @@
-// src/components/games/chess/ChessGameApp.jsx
 "use client";
 
 import React from "react";
@@ -22,6 +21,7 @@ export default function ChessGameApp() {
         promotionPending={promotionPending}
         onPromotion={handlePromotionChoice}
         onReset={resetGame}
+        scores={capturedScores}
       />
 
       <div className="w-full max-w-7xl grid lg:grid-cols-[1fr_350px] gap-6 items-center">
