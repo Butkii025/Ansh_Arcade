@@ -6,7 +6,7 @@ import { FaRotateLeft, FaRobot, FaUser } from 'react-icons/fa6';
 type SquareValue = string | null;
 type BoardState = SquareValue[];
 
-export default function TicTacToe(): JSX.Element {
+export default function TicTacToe(): React.JSX.Element {
   const [board, setBoard] = useState<BoardState>(Array(9).fill(null));
   const [isUserTurn, setIsUserTurn] = useState<boolean>(true);
   const [winner, setWinner] = useState<SquareValue>(null);

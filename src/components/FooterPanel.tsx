@@ -7,7 +7,7 @@ interface SocialLink {
   url: string;
 }
 
-export default function FooterPanel(): JSX.Element {
+export default function FooterPanel(): React.JSX.Element {
   const currentYear = new Date().getFullYear();
   const socialLinks: SocialLink[] = [
     { 

@@ -5,7 +5,7 @@ import { FaRotateLeft, FaArrowUp, FaArrowDown, FaArrowLeft, FaArrowRight, FaPlay
 
 type Position = [number, number];
 
-export default function RetroSnake(): JSX.Element {
+export default function RetroSnake(): React.JSX.Element {
   const GRID_SIZE = 15;
   
   const getInitialSnake = (): Position[] => [[7, 13]];
