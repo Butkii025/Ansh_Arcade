@@ -74,7 +74,8 @@ export default function HomeArcade(): React.JSX.Element {
       <p className="text-center mt-10  transition-all duration-500 ease-in-out">
           {!activeGame && (
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300 mt-4">
-              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby : designed by
+              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby 
+              designed by
               <div className="flex flex-wrap gap-3">
                 <a 
                 href="https://p-vijay.vercel.app/" 
@@ -96,7 +97,7 @@ export default function HomeArcade(): React.JSX.Element {
           <h1 className={`font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white via-zinc-200 to-zinc-600 select-none transition-all duration-500 ease-in-out ${
             activeGame ? 'text-3xl md:text-4xl' : 'text-5xl md:text-7xl'
           }`}>
-            Ansh_Arcade
+            Xela_Arcade
           </h1>
 
           <p className={`tracking-[0.25em] uppercase font-semibold max-w-md mx-auto mt-3 transition-all duration-500 ${

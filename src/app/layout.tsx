@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "𝙰𝚗𝚜𝚑 𝙰𝚛𝚌𝚊𝚍𝚎",
-  description: "Next-Gen Library of Custom Game Engines deployed by pixcelansh",
+  title: "𝖷𝖾𝗅𝖺_𝖠𝗋𝖼𝖺𝖽𝖾",
+  description: "Next-Gen Library of Custom Game Engines",
 };
 
 export default function RootLayout({

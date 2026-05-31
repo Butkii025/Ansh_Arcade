@@ -13,7 +13,7 @@ export default function FooterPanel(): React.JSX.Element {
     { 
       name: 'Email',
       icon: MdEmail,
-      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=pixcelansh@gmail.com' 
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=g.pixelansh@gmail.com' 
     },
   ];
 
@@ -45,7 +45,7 @@ export default function FooterPanel(): React.JSX.Element {
       {/* Text Container Layout */}
       <div className="w-full max-w-4xl text-center">
         <p className="text-[10px] font-mono text-zinc-400 tracking-widest uppercase leading-relaxed">
-          © {currentYear} Anshu Arcade. A gaming matrix deployed by pixcelansh group Pvt.Ltd. All rights reserved.
+          © {currentYear} Xela_Arcade. A gaming matrix. All rights reserved.
         </p>
       </div>
 
