@@ -4,17 +4,22 @@ import { useState, useEffect, useRef } from "react"
 
 export default function SmoothFollower() {
   const mousePosition = useRef({ x: 0, y: 0 })
-
   const dotPosition = useRef({ x: 0, y: 0 })
   const borderDotPosition = useRef({ x: 0, y: 0 })
 
   const [renderPos, setRenderPos] = useState({ dot: { x: 0, y: 0 }, border: { x: 0, y: 0 } })
   const [isHovering, setIsHovering] = useState(false)
+  
+  // 1. Add a mounted state tracker
+  const [mounted, setMounted] = useState(false)
 
   const DOT_SMOOTHNESS = 0.2
   const BORDER_DOT_SMOOTHNESS = 0.1
 
   useEffect(() => {
+    // 2. Set mounted to true once we hit the client side
+    setMounted(true)
+
     const handleMouseMove = (e: MouseEvent) => {
       mousePosition.current = { x: e.clientX, y: e.clientY }
     }
@@ -22,7 +27,6 @@ export default function SmoothFollower() {
     const handleMouseEnter = () => setIsHovering(true)
     const handleMouseLeave = () => setIsHovering(false)
 
-    // Add event listeners
     window.addEventListener("mousemove", handleMouseMove)
 
     const interactiveElements = document.querySelectorAll("a, button, img, input, textarea, select")
@@ -31,7 +35,6 @@ export default function SmoothFollower() {
       element.addEventListener("mouseleave", handleMouseLeave)
     })
 
-    // Animation function for smooth movement
     const animate = () => {
       const lerp = (start: number, end: number, factor: number) => {
         return start + (end - start) * factor
@@ -51,10 +54,8 @@ export default function SmoothFollower() {
       requestAnimationFrame(animate)
     }
 
-    // Start animation loop
     const animationId = requestAnimationFrame(animate)
 
-    // Clean up
     return () => {
       window.removeEventListener("mousemove", handleMouseMove)
 
@@ -67,10 +68,10 @@ export default function SmoothFollower() {
     }
   }, [])
 
-  if (typeof window === "undefined") return null
+  if (!mounted) return null
 
   return (
-    <div className="pointer-events-none fixed inset-0">
+    <div className="pointer-events-none fixed inset-0 z-50"> 
       <div
         className="absolute rounded-full dark:bg-white bg-black "
         style={{
