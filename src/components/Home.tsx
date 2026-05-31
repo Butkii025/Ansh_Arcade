@@ -71,6 +71,24 @@ export default function HomeArcade(): React.JSX.Element {
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-500/5 rounded-full filter blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-purple-500/5 rounded-full filter blur-[120px] pointer-events-none" />
 
+      <p className="text-center mt-10  transition-all duration-500 ease-in-out">
+          {!activeGame && (
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300 mt-4">
+              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby : designed by
+              <div className="flex flex-wrap gap-3">
+                <a 
+                href="https://p-vijay.vercel.app/" 
+                target="_blank" 
+                rel="noreferrer"
+                className="hover:bg-zinc-800 text-zinc-400 hover:text-blue-500 transition-all duration-300 shadow-xl active:scale-90"
+                >P_Vijay
+                </a>
+              </div>
+            </div>
+          )}
+        </p>
+
+
       <div className="max-w-5xl mx-auto pt-12 pb-12 flex flex-col items-center relative z-10">
         
         <header className="text-center mb-20  transition-all duration-500 ease-in-out">
@@ -156,23 +174,6 @@ export default function HomeArcade(): React.JSX.Element {
             </div>
           </section>
         )}
-        <p className="text-center mt-10  transition-all duration-500 ease-in-out">
-          {!activeGame && (
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-4 animate-in fade-in duration-300 mt-4">
-              <FaBrain className="text-blue-400 animate-pulse" /> Game Environment Lobby : designed by
-              <div className="flex flex-wrap gap-3">
-                <a 
-                href="https://in.pinterest.com/" 
-                target="_blank" 
-                rel="noreferrer"
-                className="hover:bg-zinc-800 text-zinc-400 hover:text-blue-500 transition-all duration-300 shadow-xl active:scale-90"
-                >P_Vijay
-                </a>
-              </div>
-            </div>
-          )}
-        </p>
-
       </div>
        <FooterPanel />
     </div>
