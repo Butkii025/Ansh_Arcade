@@ -13,7 +13,7 @@ export default function FooterPanel(): React.JSX.Element {
     { 
       name: 'Email',
       icon: MdEmail,
-      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=g.pixelansh@gmail.com' 
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=priyanshuvijay262@gmail.com' 
     },
   ];
 
