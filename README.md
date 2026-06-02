@@ -1,28 +1,42 @@
-# 🎮 Kriyon_Arcade
+# Xela Arcade 🎮
 
-A modern, high-performance web gaming platform built with Next.js, acting as a centralized hub for interactive, responsive web games.
-
----
-
-## 📝 Project Overview & Description
-
-**Kriyon_Arcade** is a centralized multi-game dashboard designed to bring classic, retro, and complex web games into a single, seamless user experience. Instead of maintaining separate deployment pipelines or navigating across multiple sites, this platform consolidates games into an ecosystem governed by a unified dashboard.
-
-### Key Features
-* **Centralized Hub:** A clean, modern dashboard layout to browse, select, and launch individual games instantly.
-* **Optimized Performance:** Fast asset loading, automatic image handling, and zero layout shifts using Next.js font and asset optimization.
-* **Responsive Viewports:** Tailored layouts delivering fluid, native-feeling gameplay across mobile, tablet, and desktop screens.
-* **Strict Isolation Rules:** Architecture designed to keep game instances independent, preventing scripts or styles from bleeding into other areas of the application.
+Xela Arcade is a high-performance, responsive web-based retro gaming hub engineered using **Next.js**, **TypeScript**, and **Tailwind CSS**. Optimized for seamless cross-platform performance, the matrix features zero-dependency implementations of classic arcade games built entirely on pure React state machines..
 
 ---
 
-## 🕹️ Games Added
+## 🚀 Live Matrix
+Deployed at: **[xela-arcade.netlify.app](https://xela-arcade.netlify.app/)**
 
-| Game Title | Genre | Description / Tech Highlight | Current Status |
-| :--- | :--- | :--- | :--- |
-| **Chess** | Strategy / Board | Powered by complex JavaScript algorithms for move validation, turn-state tracking, board evaluation, and deep game-tree logic. | 🛠️ In Active Development |
-| **RetroSnake** | Arcade / Retro | A modern take on the classic arcade snake game, utilizing precise grid-movement algorithms and collision detection. | ⚡ Fully Playable |
-| **TicTacToe** | Casual / Strategy | A clean, fast-paced implementation of the classic game featuring instant win-condition state checks. | ⚡ Fully Playable |
+---
+
+## 🛠️ Tech Stack & Architecture
+
+| Layer | Technology | Engineering Purpose |
+| :--- | :--- | :--- |
+| **Framework** | Next.js (App Router) | Client-side hydration & fast routing |
+| **Language** | TypeScript | Type safety and strict structural bounds |
+| **Styling** | Tailwind CSS | Utility-first fluid styling, transitions, and layout matching |
+| **Icons** | React Icons (`fa6`, `md`) | High-fidelity scalable vector interface triggers |
+| **Deployment** | Netlify | Fast global edge delivery & production builds |
+
+---
+
+## 🎯 Active Gaming Catalog
+
+### ♟️ Chess Matrix
+* **Rule Enforcement:** Features strict client-side validation logic for legal piece mechanics, handling coordinate-based rule tracking for pawn pushes and tactical diagonal captures.
+* **Structural Board Alignment:** Built on a responsive grid system wrapped in a rigid outer container, keeping cell boundaries perfectly intact without shifting shapes during intense piece manipulation.
+* **Piece Development Focus:** Optimized visual highlights to track piece trajectories, giving players immediate tactical feedback during openings, mid-game skirmishes, and tactical transitions.
+
+### 🐍 Retro Snake
+* **Spawn Control:** Programmed to begin from the lower grid coordinates (`[7, 13]`) for immediate accessibility.
+* **Responsive D-Pad:** Features a dedicated, cross-platform direction pad layout. It maps smoothly beneath the board on mobile screens and dynamically shifts to a side-by-side row split (`lg:flex-row`) on desktops.
+* **Loop Synchronization:** Implemented with explicit functional state mutations to eliminate race conditions and stale closures during high-frequency user keyboard or button inputs.
+
+### ❌ Tic-Tac-Toe (`MATRIX_v1.0`)
+* **Warp-Proof Architecture:** Grid items are bound by a rigid aspect ratio matrix (`aspect-square`) using absolute text placement wrappers (`absolute inset-0`). This halts browser layout recalculations and prevents container shifting when 'X' or 'O' tokens fill the grid blocks.
+* **Intelligent Bot AI:** Deploys defensive, predictive move-blocking logic before falling back to center-capture and randomized index paths.
+* **Layout Stability:** Utilizes a custom opacity transition container to pin UI elements in place. This prevents frame popping before the match begins or after a system reset.
 
 ---
 
@@ -68,9 +82,30 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 ​Maintained by: P_vijay
 ​Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
 
+## 💻 Local Installation & Setup
+
+Follow these commands to deploy the workspace on your local environment:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git)
+cd xela-arcade
+
+### 2. Install Project Dependencies
+```bash
+npm install
+
+### 3. Launch Development Instance
+```bash
+npm run dev
+
+Open http://localhost:3000 inside your web browser viewport to interact with the environment.
+
+
 
 ​🤝 Contributing & Collaboration
-​If you have an idea for a game or want to improve an existing one, contributions are welcome! Please follow these structured steps to ensure a smooth integration:
+
+if you have an idea for a game or want to improve an existing one, contributions are welcome! Please follow these structured steps to ensure a smooth integration:
 ​Fork the Repository: Click the "Fork" button at the top right of this page to create a copy under your account.
 ​Add Your Game Code:
 ​Place your core game components or route folders inside the src/app/games/YOUR_GAME_NAME and src/components/games/YOUR_GAME_NAME directories.
