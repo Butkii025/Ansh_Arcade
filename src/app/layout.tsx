@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "𝖷𝖾𝗅𝖺_𝖠𝗋𝖼𝖺𝖽𝖾",
-  description: "Next-Gen Library of Custom Game Engines",
+  description: "Next-Gen Library of Custom Game by Xela_Arcade",
 };
 
 export default function RootLayout({
