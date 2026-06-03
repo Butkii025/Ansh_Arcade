@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaBrain, FaRobot, FaGamepad, FaChessKnight, FaArrowLeft } from 'react-icons/fa';
 import TicTacToe from './games/TicTacToe';
 import RetroSnake from './games//RetroSnake';
-import ChessGameApp from './games//chess/ChessGameApp';
+// import ChessGameApp from './games//chess/ChessGameApp';
 import VisitorCounter from '../components/VisitorCounter';
 import FooterPanel from '../components/FooterPanel';
 
@@ -170,7 +170,7 @@ export default function HomeArcade(): React.JSX.Element {
               <div className="relative w-full flex justify-center">
                 {activeGame === 'tic-tac-toe' && <TicTacToe />}
                 {activeGame === 'retro-snake' && <RetroSnake />}
-                {activeGame === 'chess-game-app' && <ChessGameApp />}
+                /* {activeGame === 'chess-game-app' && <ChessGameApp />} */
               </div>
             </div>
           </section>
