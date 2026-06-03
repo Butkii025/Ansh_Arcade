@@ -7,7 +7,7 @@ export function ChessBoard({ board, selected, turn, validMoves, handleClick, res
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[32px] p-4 shadow-2xl flex flex-col items-center w-full">
       <div className="w-full max-w-[460px] flex flex-col sm:flex-row items-center justify-between gap-3 mb-4">
-        <h1 className="text-2lg flex items-center gap-1.5 tracking-tight uppercase tracking-widest text-slate-500 "><Crown className="text-yellow-400" size={22} /> Kriyon Chess_Arena</h1>
+        <h1 className="text-2lg flex items-center gap-1.5 tracking-tight uppercase tracking-widest text-slate-500 "><Crown className="text-yellow-400" size={22} /> Xela Chess_Arena</h1>
         <div className="flex items-center gap-2">
           <div className="px-3 py-1.5 rounded-xl bg-indigo-500/10 border border-indigo-400/20 text-xs">Turn: <span className="font-bold text-indigo-300">{turn === "w" ? "White" : "Black"}</span></div>
           <button onClick={resetGame} className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-xs transition"><RotateCcw size={12} /> Reset</button>
