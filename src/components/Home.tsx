@@ -153,7 +153,7 @@ export default function HomeArcade(): React.JSX.Element {
               <div className="relative w-full flex justify-center">
                 {activeGame === 'tic-tac-toe' && <TicTacToe />}
                 {activeGame === 'retro-snake' && <RetroSnake />}
-                /* {activeGame === 'chess-game-app' && <ChessGameApp />} */
+                {/* {activeGame === 'chess-game-app' && <ChessGameApp />} */}
               </div>
             </div>
           </section>
