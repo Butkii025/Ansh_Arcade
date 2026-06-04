@@ -1,6 +1,6 @@
-# Xela Arcade 🎮
+# Xela_Arcade 🎮
 
-Xela Arcade is a high-performance, responsive web-based retro gaming hub engineered using **Next.js**, **TypeScript**, and **Tailwind CSS**. Optimized for seamless cross-platform performance, the matrix features zero-dependency implementations of classic arcade games built entirely on pure React state machines..
+Xela_Arcade is a high-performance, responsive web-based retro gaming hub engineered using **Next.js**, **TypeScript**, and **Tailwind CSS**. Optimized for seamless cross-platform performance, the matrix features zero-dependency implementations of classic arcade games built entirely on pure React state machines.
 
 ---
 
@@ -40,18 +40,9 @@ Deployed at: **[xela-arcade.netlify.app](https://xela-arcade.netlify.app/)**
 
 ---
 
-## 🛠️ Tech Stack
-
-* **Framework:** [Next.js](https://nextjs.org/) (App Router architecture)
-* **Language:** [TypeScript](https://www.typescriptlang.org/) / Advanced JavaScript (Algorithmic Logic)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Font Asset:🏆** Geist (Optimized natively via `next/font`)
-
----
-
 ## 📂 Project Folder Structure
 
-To maintain long-term scalability and clean code separation, **Kriyon_Arcade** utilizes a strictly structured directory where each game's assets, routing, components, and independent state modules are fully compartmentalized.
+To maintain long-term scalability and clean code separation, **Xela_Arcade** utilizes a strictly structured directory where each game's assets, routing, components, and independent state modules are fully compartmentalized.
 
 ```text
 ├── public/                  # Static application assets
@@ -59,7 +50,7 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 ├── src/
 │   ├── app/                 # Next.js App Router Structure
 │   │   ├── layout.tsx       # Root layout, global fonts, and context wrappers
-│   │   ├── page.tsx         # Kriyon_Arcade Core Dashboard / Hub Interface
+│   │   ├── page.tsx         # Xela_Arcade Core Dashboard / Hub Interface
 │   │   └── games/           # Dedicated route directory for all game instances
 │   │       ├── chess/       
 │   │       │   └── page.tsx 
@@ -77,41 +68,28 @@ To maintain long-term scalability and clean code separation, **Kriyon_Arcade** u
 │   └── utils/               # Complex algorithms, state evaluators, and math helpers
 ├── package.json
 └── README.md
+```
+---
 
-💻 Developer
-​Maintained by: P_vijay
-​Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
+## 💻 Developer
 
-## 💻 Local Installation & Setup
-
-Follow these commands to deploy the workspace on your local environment:
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git)
-cd xela-arcade
-
-### 2. Install Project Dependencies
-```bash
-npm install
-
-### 3. Launch Development Instance
-```bash
-npm run dev
-
-Open http://localhost:3000 inside your web browser viewport to interact with the environment.
-
-
-
-​🤝 Contributing & Collaboration
-
-if you have an idea for a game or want to improve an existing one, contributions are welcome! Please follow these structured steps to ensure a smooth integration:
-​Fork the Repository: Click the "Fork" button at the top right of this page to create a copy under your account.
-​Add Your Game Code:
-​Place your core game components or route folders inside the src/app/games/YOUR_GAME_NAME and src/components/games/YOUR_GAME_NAME directories.
-​If your game requires static media (images, sprites, audio), place them inside public/assets/games/YOUR_GAME_NAME/.
-​Verify Implementation: Run the project locally and double-check that your game functions cleanly without cross-contaminating other game environments or causing layout shifts.
-​Create a Pull Request (PR): Submit a PR to the main repository using the following naming convention:
-​PR for [YOUR_GAME_NAME] by @[YOUR_GITHUB_USERNAME]
+Maintained by: **P_vijay** *Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.*
 
 ---
+
+Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
+
+## 💻 Local Installation & Setup
+Follow these commands to deploy the workspace on your local environment:
+
+1. Clone the Repository
+Bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git)
+cd xela-arcade
+2. Install Project Dependencies
+Bash
+npm install
+3. Launch Development Instance
+Bash
+npm run dev
+Open http://localhost:3000 inside your web browser viewport to interact with the environment.
