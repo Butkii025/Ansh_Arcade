@@ -1,6 +1,6 @@
 # Xela_Arcade 🎮
 
-Xela_Arcade is a high-performance, responsive web-based retro gaming hub engineered using **Next.js**, **TypeScript**, and **Tailwind CSS**. Optimized for seamless cross-platform performance, the matrix features zero-dependency implementations of classic arcade games built entirely on pure React state machines.
+Project: Xela_Arcade is a high-performance, responsive web-based retro gaming hub engineered using **Next.js**, **TypeScript**, and **Tailwind CSS**. Optimized for seamless cross-platform performance, the matrix features zero-dependency implementations of classic arcade games built entirely on pure React state machines.
 
 ---
 
@@ -84,7 +84,7 @@ Follow these commands to deploy the workspace on your local environment:
 
 1. Clone the Repository
 Bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git)
+git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/Butkii025/Xela_Arcade.git)
 cd xela-arcade
 2. Install Project Dependencies
 Bash
