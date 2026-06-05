@@ -84,7 +84,7 @@ Follow these commands to deploy the workspace on your local environment:
 
 1. Clone the Repository
 Bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/xela-arcade.git](https://github.com/Butkii025/Xela_Arcade.git)
+git clone [ https://github.com/Butkii025/Xela_Arcade.git ]
 cd xela-arcade
 2. Install Project Dependencies
 Bash
