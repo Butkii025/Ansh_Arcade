@@ -77,19 +77,16 @@ Maintained by: **P_vijay** *Hey there! I am actively working to add more web-bas
 
 ---
 
-Hey there! I am actively working to add more web-based games in the future with a polished, modern UI.
+## ⚖️ Licensing & Intellectual Property Protection
 
-## 💻 Local Installation & Setup
-Follow these commands to deploy the workspace on your local environment:
+This project operates under a strict **Split-Licensing Model** to maximize codebase transparency while legally protecting the platform from unauthorized commercial exploitation or closed-source forks.
 
-1. Clone the Repository
-Bash
-git clone [ https://github.com/Butkii025/Xela_Arcade.git ]
-cd xela-arcade
-2. Install Project Dependencies
-Bash
-npm install
-3. Launch Development Instance
-Bash
-npm run dev
-Open http://localhost:3000 inside your web browser viewport to interact with the environment.
+### 1. Software & Game Logic (GNU GPLv3)
+The entire underlying codebase—including the web environment, server backends, database configurations, and custom game engines—is licensed under the **GNU General Public License v3 (GPLv3)**. 
+* **Copyleft Enforced:** Anyone may clone and inspect this code, but any modified versions, feature additions, or alternative website deployments **must** remain 100% open-source under the exact same GPLv3 license.
+* **Proprietary Block:** You are legally prohibited from taking this code and locking it inside a private, closed-source repository or using it for a proprietary commercial gaming service.
+
+### 2. Game Assets, Artwork, & Content (CC BY-NC-ND 4.0)
+All visual assets, pixel art, animations, UI mockups, audio files, sound effects, and custom classic map designs are strictly protected under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**.
+* **Non-Commercial:** No individual or corporation may use the artistic assets of this project to generate revenue, sell in-game microtransactions, or run paid advertisements.
+* **No Derivatives:** Unauthorized altering, recoloring, or re-skinning of the custom game graphics for other external projects is strictly prohibited.
